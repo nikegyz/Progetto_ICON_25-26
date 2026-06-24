@@ -1,0 +1,22 @@
+k_means
+276
+307
+
+knn
+accuracy 0.68#f1 0.68#precision 0.68#recall 0.68#balanced_accuracy 0.548#auc 0.73552
+
+decision_trees
+accuracy 0.7142857142857143#f1 0.7142857142857143#precision 0.7142857142857143#recall 0.7142857142857143#balanced_accuracy 0.5#auc 0.686
+
+random_forest
+accuracy 0.7085714285714285#f1 0.7085714285714285#precision 0.7085714285714285#recall 0.7085714285714285#balanced_accuracy 0.52#auc 0.75568
+
+naive_bayes
+accuracy 0.6114285714285714#f1 0.6114285714285714#precision 0.6114285714285714#recall 0.6114285714285714#balanced_accuracy 0.716#auc 0.7753599999999999
+
+neural_network
+accuracy 0.6571428571428571#f1 0.6571428571428571#precision 0.6571428571428571#recall 0.6571428571428571#balanced_accuracy 0.592#auc 0.7310399999999999
+
+logistic_regression
+accuracy 0.72#f1 0.72#precision 0.72#recall 0.72#balanced_accuracy 0.5519999999999999#auc 0.75008
+

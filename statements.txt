@@ -1,0 +1,29 @@
+# Fatti su classi
+fact: (isa diabetico paziente)
+fact: (isa non_diabetico paziente)
+
+# Fatti su metriche
+fact: (isa glucosio metrics)
+fact: (isa bmi metrics)
+fact: (isa eta metrics)
+fact: (isa pressione metrics)
+
+# Istanze di pazienti (usa dati dal dataset)
+fact: (inst paziente1 diabetico)
+fact: (glucosio paziente1 148)
+fact: (bmi paziente1 33.6)
+fact: (eta paziente1 50)
+fact: (pressione paziente1 72)
+
+fact: (inst paziente2 non_diabetico)
+fact: (glucosio paziente2 85)
+fact: (bmi paziente2 26.6)
+fact: (eta paziente2 31)
+fact: (pressione paziente2 66)
+
+# Aggiungi più istanze...
+
+# Regole mediche utili
+rule: ((inst ?x ?y) (isa ?y ?z)) -> (inst ?x ?z)
+rule: ((glucosio ?x ?v) (> ?v 140) (bmi ?x ?b) (> ?b 30)) -> (rischio_diabetico ?x)
+rule: ((eta ?x ?e) (> ?e 45) (pressione ?x ?p) (> ?p 80)) -> (anziano_a_rischio ?x)
